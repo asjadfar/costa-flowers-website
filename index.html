@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Costa Flowers | Florist in Dehesa de Campoamor — Bouquets, Weddings &amp; Same-Day Delivery</title>
+<meta name="description" content="Costa Flowers — florist in Dehesa de Campoamor, Alicante. Fresh bouquets, wedding & bridal flowers, funeral flowers, events, birthdays and communions. Same-day delivery across Costa Blanca, Alicante, Murcia & Vega Baja. Rated 4.9 stars on Google. Call +34 865 77 05 70.">
+<meta property="og:title" content="Costa Flowers | Florist in Dehesa de Campoamor, Alicante">
+<meta property="og:description" content="Fresh flowers & plants for home, weddings, funerals, birthdays and communions. Same-day delivery across Costa Blanca, Alicante, Murcia & Vega Baja. Rated 4.9 stars on Google.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/pink-lilies.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "Costa Flowers",
+  "description": "Florist in Dehesa de Campoamor, Alicante. Flowers and plants for home, events, funerals, weddings, birthdays and communions. Delivery across Costa Blanca, Alicante, Murcia and Vega Baja.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "C. comercial Bosque de Lomas, Ctra. San Miguel de Salinas, 2",
+    "postalCode": "03193",
+    "addressLocality": "Dehesa de Campoamor",
+    "addressRegion": "Alicante",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34 865 77 05 70",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "62" },
+  "priceRange": "€€"
+}
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --green: #2E4B3F; --green-dark: #1F362C; --rose: #C4576B; --rose-dark: #A63E52;
+    --blush: #F7E8E6; --cream: #FBF7F1; --dark: #22312A; --text: #2E3A34;
+    --muted: #6E7A72; --white: #FFFFFF; --gold: #C9A227;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--cream); line-height: 1.65; }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 70px 0; }
+  h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; color: var(--dark); line-height: 1.2; }
+  h2 { font-size: 2.2rem; text-align: center; margin-bottom: 10px; }
+  h2::after { content: ""; display: block; width: 64px; height: 3px; background: var(--rose); margin: 16px auto 0; border-radius: 2px; }
+  .about-grid h2::after, .visit-grid h2::after { margin-left: 0; }
+  .sub { text-align: center; color: var(--muted); max-width: 640px; margin: 0 auto 36px; }
+  .badge { display: inline-block; background: var(--blush); color: var(--rose-dark); border: 1px solid #EFC9C4; padding: 6px 14px; border-radius: 30px; font-weight: 700; font-size: .9rem; margin-bottom: 14px; letter-spacing: .4px; }
+
+  header { position: sticky; top: 0; z-index: 50; background: var(--green-dark); box-shadow: 0 2px 14px rgba(0,0,0,.35); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; font-weight: 800; color: #fff; letter-spacing: .5px; white-space: nowrap; }
+  .logo span { color: #F2A7B8; }
+  .logo small { display: block; font-family: 'Inter', sans-serif; font-size: .6rem; font-weight: 700; letter-spacing: 2.5px; color: #C9D6CC; }
+  nav ul { display: flex; gap: 24px; list-style: none; }
+  nav a { font-weight: 600; font-size: .95rem; color: #EAF0EB; }
+  nav a:hover { color: #F2A7B8; }
+  .btn { display: inline-block; background: var(--rose); color: #fff; padding: 13px 28px; border-radius: 30px; font-weight: 800; border: none; cursor: pointer; font-size: 1rem; letter-spacing: .3px; }
+  .btn:hover { background: var(--rose-dark); }
+  .btn-green { background: var(--green); color: #fff; }
+  .btn-green:hover { background: var(--green-dark); }
+  .btn-outline { background: transparent; color: #fff; border: 2px solid #fff; }
+  .burger { display: none; background: none; border: none; font-size: 1.6rem; cursor: pointer; color: #fff; }
+
+  .hero { position: relative; min-height: 88vh; display: flex; align-items: center; color: #fff; padding: 0; border-bottom: 4px solid var(--rose); }
+  .hero::before { content: ""; position: absolute; inset: 0; background: url('images/pink-lilies.jpg') center/cover no-repeat; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,44,34,.88), rgba(24,44,34,.35)); }
+  .hero .wrap { position: relative; z-index: 2; }
+  .hero h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); color: #fff; max-width: 680px; margin-bottom: 16px; font-weight: 800; }
+  .hero p { font-size: 1.15rem; max-width: 540px; margin-bottom: 28px; color: #FDEEF0; }
+  .hero .btn { margin-right: 12px; margin-bottom: 10px; }
+  .hero .rating { margin-top: 18px; color: #F2A7B8; font-weight: 700; letter-spacing: 1px; }
+
+  .offer-bar { background: var(--green-dark); color: #EAF0EB; text-align: center; padding: 12px 16px; font-weight: 700; border-bottom: 1px solid #3A5245; }
+  .offer-bar span { color: #F2A7B8; }
+
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+  .about-grid img { border-radius: 16px; box-shadow: 0 12px 30px rgba(31,46,39,.18); }
+  .about-grid h2 { text-align: left; }
+  .about-grid p { color: var(--muted); margin-bottom: 14px; }
+  .stats { display: flex; gap: 28px; margin-top: 22px; flex-wrap: wrap; }
+  .stats b { display: block; font-size: 1.6rem; color: var(--rose); }
+  .stats span { font-size: .9rem; color: var(--muted); }
+  .ticks { list-style: none; margin-top: 16px; columns: 2; }
+  .ticks li { padding: 4px 0; color: var(--text); font-weight: 600; }
+  .ticks li::before { content: "✓ "; color: var(--rose); font-weight: 900; }
+
+  .services { background: #fff; }
+  .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .service { border-radius: 16px; overflow: hidden; background: var(--cream); border: 1px solid #EFE3DC; }
+  .service img { width: 100%; height: 190px; object-fit: cover; }
+  .service div { padding: 18px 20px 22px; }
+  .service h3 { font-size: 1.25rem; margin-bottom: 6px; }
+  .service p { color: var(--muted); font-size: .95rem; }
+  .service .price-note { display: block; margin-top: 10px; font-weight: 800; color: var(--rose); }
+
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .gallery img { height: 220px; width: 100%; object-fit: cover; border-radius: 16px; }
+  .gallery figure { position: relative; }
+  .gallery figcaption { position: absolute; left: 10px; bottom: 10px; background: rgba(0,0,0,.65); color: #fff; padding: 4px 10px; border-radius: 20px; font-size: .8rem; font-weight: 700; }
+
+  .testi { background: #fff; }
+  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .quote { background: var(--cream); border-radius: 16px; padding: 26px; border-top: 3px solid var(--rose); }
+  .quote p { font-style: italic; color: var(--muted); margin-bottom: 14px; }
+  .quote .stars { color: var(--rose); letter-spacing: 2px; margin-bottom: 8px; }
+  .quote b { color: var(--dark); }
+
+  .areas { background: var(--green-dark); color: #fff; text-align: center; }
+  .areas h2 { color: #fff; }
+  .areas h2::after { background: #F2A7B8; }
+  .areas p { color: #D8E2DA; max-width: 640px; margin: 0 auto 26px; }
+  .area-chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .area-chips span { background: #2E4B3F; border: 1px solid #4A6A5B; padding: 10px 20px; border-radius: 30px; font-weight: 700; }
+
+  .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+  .visit-grid h2 { text-align: left; }
+  .hours { list-style: none; margin: 18px 0; }
+  .hours li { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid #EADFCF; }
+  .hours li span:first-child { font-weight: 600; }
+  .hours-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-weight: 700; color: var(--dark); margin: 22px 0 4px; }
+  .map { width: 100%; height: 320px; border: 0; border-radius: 16px; margin-top: 18px; }
+  .call-box { background: #fff; border-radius: 16px; padding: 26px; box-shadow: 0 6px 18px rgba(31,46,39,.08); border-top: 3px solid var(--rose); }
+  .call-box h3 { margin-bottom: 10px; }
+  .call-box p { color: var(--muted); margin-bottom: 14px; }
+  .call-box .btn { margin: 0 10px 10px 0; }
+
+  footer { background: #141F19; color: #D8E2DA; padding: 44px 0 26px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; }
+  footer h3 { color: #F2A7B8; margin-bottom: 10px; }
+  footer p, footer a { font-size: .95rem; }
+  footer a:hover { color: #F2A7B8; }
+  .credit { text-align: center; border-top: 1px solid rgba(255,255,255,.15); margin-top: 34px; padding-top: 20px; font-size: .85rem; color: #A9B8AD; }
+  .float-call { display: none; position: fixed; bottom: 16px; left: 16px; right: 16px; z-index: 60; background: var(--green-dark); color: #F2A7B8; text-align: center; padding: 14px; border-radius: 30px; font-weight: 800; box-shadow: 0 8px 20px rgba(0,0,0,.3); border: 1px solid #F2A7B8; }
+
+  @media (max-width: 820px) {
+    .about-grid, .visit-grid { grid-template-columns: 1fr; }
+    .service-grid { grid-template-columns: 1fr 1fr; }
+    .testi-grid { grid-template-columns: 1fr 1fr; }
+    .gallery { grid-template-columns: 1fr 1fr; }
+    nav ul { display: none; position: absolute; top: 64px; right: 0; left: 0; background: var(--green-dark); flex-direction: column; padding: 18px 20px; gap: 16px; box-shadow: 0 10px 20px rgba(0,0,0,.3); }
+    nav ul.open { display: flex; }
+    .burger { display: block; }
+    .nav .btn { display: none; }
+    .float-call { display: block; }
+    section { padding: 50px 0; }
+    .ticks { columns: 1; }
+  }
+  @media (max-width: 520px) {
+    .service-grid, .testi-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">COSTA <span>FLOWERS</span><small>DEHESA DE CAMPOAMOR • ALICANTE</small></a>
+    <nav>
+      <button class="burger" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="tel:+34865770570">Call the Shop</a>
+  </div>
+</header>
+
+<div class="offer-bar">🌸 <span>Same-day flower delivery</span> — across Costa Blanca, Alicante, Murcia &amp; Vega Baja &nbsp;•&nbsp; 💐 Ready-made bouquets <span>from €25</span> in store</div>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">★ 4.9 on Google • 62 reviews • Dehesa de Campoamor</span>
+    <h1>Fresh flowers, made with care, delivered today.</h1>
+    <p>Bouquets, weddings, funerals, birthdays and communions — fresh flowers and plants for home and every occasion, from your local florist in Dehesa de Campoamor.</p>
+    <a class="btn" href="#services">See What We Do</a>
+    <a class="btn btn-outline" href="tel:+34865770570">Call +34 865 77 05 70</a>
+    <p class="rating">★★★★★ 4.9 — “Fantastic selection of beautiful fresh flowers.”</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <img src="images/interior.jpg" alt="Inside Costa Flowers — display table with sunflower and rose bouquets">
+    <div>
+      <span class="badge">Local florist • Flower designer</span>
+      <h2>Your neighbourhood florist on the Costa Blanca</h2>
+      <p>Costa Flowers is a flower shop in Dehesa de Campoamor, Alicante — flowers and plants for home, events, funerals, weddings, birthdays and communions.</p>
+      <p>Every bouquet is made to order in the shop. Call or drop in, tell us the occasion, and we will put together something fresh for it — ready-made bouquets are also available in store from €25.</p>
+      <ul class="ticks">
+        <li>Same-day flower delivery</li>
+        <li>In-store shopping</li>
+        <li>Curbside pickup</li>
+        <li>Wheelchair-accessible entrance</li>
+        <li>Cards &amp; NFC mobile payments</li>
+        <li>Fresh flowers &amp; plants</li>
+      </ul>
+      <div class="stats">
+        <div><b>4.9★</b><span>Google rating</span></div>
+        <div><b>62</b><span>Google reviews</span></div>
+        <div><b>7 days</b><span>delivery, 9 AM – 5 PM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What We Do</h2>
+    <p class="sub">Flowers for every occasion — made fresh in the shop. Call for prices and availability; ready-made bouquets in store start at €25.</p>
+    <div class="service-grid">
+      <div class="service">
+        <img src="images/mixed-bouquet.jpg" alt="Bright mixed bouquet of roses, gerbera and lilies">
+        <div><h3>Bouquets &amp; Arrangements</h3><p>Fresh hand-tied bouquets and vase arrangements, made to order in the colours you like.</p><span class="price-note">From €25 in store</span></div>
+      </div>
+      <div class="service">
+        <img src="images/white-roses-gold.jpg" alt="White roses with pink alstroemeria in a gold vase">
+        <div><h3>Weddings &amp; Bridal Bouquets</h3><p>Bridal bouquets and wedding flowers — talk to us about your day and we will design around it.</p><span class="price-note">Call for a quote</span></div>
+      </div>
+      <div class="service">
+        <img src="images/white-lilies.jpg" alt="White lilies with peach roses and daisies">
+        <div><h3>Funeral Flowers</h3><p>Respectful funeral flowers, wreaths and stands, arranged with care for the family.</p><span class="price-note">Call for a quote</span></div>
+      </div>
+      <div class="service">
+        <img src="images/multicolour.jpg" alt="Large multicolour bouquet in a glass vase">
+        <div><h3>Birthdays &amp; Celebrations</h3><p>Bright, cheerful bouquets and baskets for birthdays, anniversaries and congratulations.</p><span class="price-note">Call for a quote</span></div>
+      </div>
+      <div class="service">
+        <img src="images/mothers-basket.jpg" alt="White wicker basket of pink gerbera, carnations and roses for Mother's Day">
+        <div><h3>Mother's Day &amp; Gifts</h3><p>Baskets, gift boxes and bouquets with a card — plus little gifts, cards and teddy bears in store.</p><span class="price-note">Call for a quote</span></div>
+      </div>
+      <div class="service">
+        <img src="images/stall.jpg" alt="Flower stall with crates of gypsophila, gerbera and rose bouquets">
+        <div><h3>Flowers &amp; Plants for Home</h3><p>Fresh-cut flowers and plants for the home, and vases to put them in.</p><span class="price-note">Call for a quote</span></div>
+      </div>
+      <div class="service">
+        <img src="images/red-basket.jpg" alt="Wicker basket of red gerbera and red roses with a red bow">
+        <div><h3>Flower Boxes &amp; Baskets</h3><p>Flower boxes and gift baskets, finished with ribbon — ready to give.</p><span class="price-note">Call for a quote</span></div>
+      </div>
+      <div class="service">
+        <img src="images/ready-made.jpg" alt="Ready-made bouquets on a display stand, priced from 25 euros">
+        <div><h3>Same-Day Delivery</h3><p>Order by phone and we deliver the same day across the Costa Blanca — 7 days a week, 9 AM to 5 PM.</p><span class="price-note">Delivery 9 AM – 5 PM daily</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>From the Shop — Real Photos</h2>
+    <p class="sub">All photos are Costa Flowers' own photos from Google Maps — their real bouquets, baskets and shop.</p>
+    <div class="gallery">
+      <figure><img src="images/shop-front.jpg" alt="Costa Flowers shop front in Dehesa de Campoamor"><figcaption>Our Shop</figcaption></figure>
+      <figure><img src="images/stall.jpg" alt="Flower stall with fresh crates of flowers"><figcaption>Fresh Every Morning</figcaption></figure>
+      <figure><img src="images/pink-lilies.jpg" alt="Bouquet of pink stargazer lilies, pink roses and gerbera"><figcaption>Pink Lilies Bouquet</figcaption></figure>
+      <figure><img src="images/red-roses.jpg" alt="Red roses and red tulips with a red heart decoration"><figcaption>Red Roses &amp; Tulips</figcaption></figure>
+      <figure><img src="images/seven-roses.jpg" alt="Bouquet of seven red roses with gypsophila"><figcaption>Seven Red Roses</figcaption></figure>
+      <figure><img src="images/mixed-pink.jpg" alt="Large mixed bouquet in pink wrapping"><figcaption>Mixed Bouquet</figcaption></figure>
+      <figure><img src="images/pink-basket.jpg" alt="Wicker basket of pink roses with a pink satin bow"><figcaption>Pink Roses Basket</figcaption></figure>
+      <figure><img src="images/mothers-day.jpg" alt="Pink roses, purple lilies and yellow daffodils with a Happy Mother's Day card"><figcaption>Mother's Day</figcaption></figure>
+      <figure><img src="images/white-lilies.jpg" alt="White lilies, peach roses and daisies in pink wrapping"><figcaption>White Lilies</figcaption></figure>
+      <figure><img src="images/interior.jpg" alt="Inside the shop — display table with sunflower bouquets"><figcaption>Inside the Shop</figcaption></figure>
+      <figure><img src="images/multicolour.jpg" alt="Large multicolour bouquet in a glass vase"><figcaption>Celebration Bouquet</figcaption></figure>
+      <figure><img src="images/ready-made.jpg" alt="Ready-made bouquets on display, from 25 euros"><figcaption>Ready-Made, from €25</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="testi" id="reviews">
+  <div class="wrap">
+    <h2>What Customers Say</h2>
+    <p class="sub">Rated 4.9 stars from 62 reviews on Google.</p>
+    <div class="testi-grid">
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>“Fantastic selection of beautiful fresh flowers and amazing bouquets plus little gifts. Staff very helpful and friendly.”</p>
+        <b>— Marion, Google review</b>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>“A great choice of flowers &amp; bouquets to suit all occasions. Ali is very accommodating &amp; very generous on special occasions.”</p>
+        <b>— Sonia, Google review</b>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>“Would not even consider going anywhere else. Brilliant displays last forever.”</p>
+        <b>— Patrick, Google review</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <h2>We Deliver Across the Costa Blanca</h2>
+    <p>Same-day flower and plant delivery, 7 days a week from 9 AM to 5 PM — including Sundays and Tuesdays, when the shop itself is closed.</p>
+    <div class="area-chips">
+      <span>Costa Blanca</span><span>Alicante</span><span>Murcia</span><span>Vega Baja</span><span>Dehesa de Campoamor</span>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <h2>Visit Us</h2>
+      <p style="color:var(--muted);">Drop in, or call to order for delivery or pickup.</p>
+      <p class="hours-title">Shop Hours</p>
+      <ul class="hours">
+        <li><span>Monday</span><span>9:00 AM – 6:00 PM</span></li>
+        <li><span>Tuesday</span><span>Closed</span></li>
+        <li><span>Wednesday</span><span>8:00 AM – 6:00 PM</span></li>
+        <li><span>Thursday</span><span>8:00 AM – 6:00 PM</span></li>
+        <li><span>Friday</span><span>8:00 AM – 6:00 PM</span></li>
+        <li><span>Saturday</span><span>8:00 AM – 6:00 PM</span></li>
+        <li><span>Sunday</span><span>Closed</span></li>
+      </ul>
+      <p class="hours-title">Delivery &amp; Pickup Hours</p>
+      <ul class="hours">
+        <li><span>Delivery — every day</span><span>9:00 AM – 5:00 PM</span></li>
+        <li><span>Pickup — Monday to Saturday</span><span>9:00 AM – 5:00 PM</span></li>
+        <li><span>Pickup — Sunday</span><span>9:00 AM – 12:00 PM</span></li>
+      </ul>
+      <p><b>Address:</b> C. comercial Bosque de Lomas, Ctra. San Miguel de Salinas, 2, 03193 Dehesa de Campoamor, Alicante, Spain<br>
+      <b>Phone:</b> <a href="tel:+34865770570">+34 865 77 05 70</a> • <a href="tel:+34632352619">+34 632 35 26 19</a> • <a href="tel:+34693773307">+34 693 77 33 07</a><br>
+      <b>Facebook:</b> <a href="https://www.facebook.com/THECOSTAFLOWERS/photos">Costa Flowers on Facebook</a><br>
+      <b>Instagram:</b> <a href="https://www.instagram.com/thecostaflowers/">@thecostaflowers</a><br>
+      <b>Payments:</b> Credit cards, debit cards &amp; NFC mobile payments</p>
+      <iframe class="map" src="https://www.google.com/maps?q=Costa+Flowers,+Dehesa+de+Campoamor,+Alicante,+Spain&output=embed" loading="lazy" title="Costa Flowers on Google Maps"></iframe>
+    </div>
+    <div class="call-box">
+      <h3>Order by Phone</h3>
+      <p>No online ordering — just call and tell us the occasion, the colours you like and where it needs to go. We will confirm the price and delivery time on the call.</p>
+      <a class="btn" href="tel:+34865770570">📞 Call +34 865 77 05 70</a>
+      <a class="btn btn-green" href="tel:+34632352619">📞 Call +34 632 35 26 19</a>
+      <p style="margin-top:10px;"><b>Popular right now:</b> hand-tied bouquets, red rose bouquets, pink lily bouquets, Mother's Day baskets and ready-made bouquets from €25.</p>
+      <img src="images/seven-roses.jpg" alt="Bouquet of seven red roses with gypsophila" style="border-radius:12px; margin-top:10px;">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>COSTA FLOWERS</h3>
+      <p>Florist • Flower Designer<br>Dehesa de Campoamor, Alicante, Spain</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="#about">About</a><br><a href="#services">Services</a><br><a href="#gallery">Gallery</a><br><a href="#visit">Visit Us</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>C. comercial Bosque de Lomas<br>Ctra. San Miguel de Salinas, 2, 03193<br>Dehesa de Campoamor, Alicante<br>+34 865 77 05 70</p>
+    </div>
+  </div>
+  <p class="credit">Photos: Costa Flowers' own photos from Google Maps. Business details, hours and reviews from the Costa Flowers Google Maps listing. Website built by Asjad Farooq — Shopify Store Designer | Web Developer | SEO · <a href="https://www.fiverr.com/asjadfar/build-a-modern-responsive-website-for-your-business" style="color:#F2A7B8;">Order on Fiverr</a></p>
+</footer>
+
+<a class="float-call" href="tel:+34865770570">📞 Call Costa Flowers — +34 865 77 05 70</a>
+</body>
+</html>
